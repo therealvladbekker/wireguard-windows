@@ -1,4 +1,6 @@
-<p align="center">![](Screenshots/perimeter-81-perimeter-81.png)</p>
+<p align="center">
+  ![](Screenshots/perimeter-81-perimeter-81.png)
+</p>
 
 # Perimeter81 Wireguard Config Generator for Windows 
 
