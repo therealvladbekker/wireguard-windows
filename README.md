@@ -4,10 +4,8 @@ In the event that a customer chooses to use a windows machine as their wireguard
 
 **_NOTE:_** This script requires windows registry access in order to enable IP Forwarding (IPEnableRouter registry key). Reboot is required
 
-You can download it from the link below or also get it from this repo:
-
 ### 1. Download and install Wireguard for windows
-* https://www.wireguard.com/install/
+* https://www.wireguard.com/install/ OR wireguard-installer.exe in this repo
   
 ### 2. Download the wireguard_generator.exe script
 
