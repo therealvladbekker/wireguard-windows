@@ -21,7 +21,7 @@ You can download it from the link below or also get it from this repo:
  * Configuration file named Perimeter81.conf should be generated for you in the same folder
   
  ### 5. Import the newly created configuration file into the wireguard connector 
- ![Screenshot](Screenshots\wireguard_windows.jpg)
+ ![Screenshot](Screenshots/wireguard_windows.jpg)
  
  ### 6. Activate
  ![Screenshot](wireguard_activated.jpg)
