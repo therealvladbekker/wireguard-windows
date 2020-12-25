@@ -13,7 +13,7 @@ You can download it from the link below or also get it from this repo:
 * Click on your wireguard tunnel, go to Configuration
 * Copy only the https link portion to your clipboard (everythign after "curl -s" and before "| sudo bash")
 * Paste it into a web browser. You should now have a file in your Downloads folder
- ![Screenshot](wireguard_config.jpg)
+ ![Screenshot](Screenshots/wireguard_config.jpg)
   
  ### 4. Run generator. 
 **_NOTE:_** Make sure that the generator script and the configuration file are in the same folder
@@ -24,5 +24,5 @@ You can download it from the link below or also get it from this repo:
  ![Screenshot](Screenshots/wireguard_windows.jpg)
  
  ### 6. Activate
- ![Screenshot](wireguard_activated.jpg)
+ ![Screenshot](Screenshots/wireguard_activated.jpg)
 
