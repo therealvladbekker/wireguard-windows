@@ -4,10 +4,11 @@ In the event that a customer chooses to use a windows machine as their wireguard
 
 You can download it from the link below or also get it from this repo:
 
-https://www.wireguard.com/install/
+
 
 1. Download and install Wireguard for windows
-
+  - https://www.wireguard.com/install/
+  
 2. Download the wireguard_generator.exe script
 
 3. Get your configuration file from your workspace:
