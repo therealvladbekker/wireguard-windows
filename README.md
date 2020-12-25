@@ -1,10 +1,8 @@
-# wireguard-windows
+# Wireguard Config Generator for Windows
 
 In the event that a customer chooses to use a windows machine as their wireguard connector, it is possible to install a wireguard peer client.
 
 You can download it from the link below or also get it from this repo:
-
-
 
 ## 1. Download and install Wireguard for windows
   - https://www.wireguard.com/install/
@@ -20,5 +18,7 @@ You can download it from the link below or also get it from this repo:
   - File called Perimeter81.conf should be generated for you in the same folder
   
  ## 5. Import the newly created configuration file into the wireguard connector via the "Import tunnel(s) from file" or Add Tunnel button
+ ![Screenshot](wireguard_windows.jpg)
+ 
  
  ## 6. Activate
