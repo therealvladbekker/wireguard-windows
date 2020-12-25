@@ -1,5 +1,4 @@
-![](Screenshots/perimeter-81-squarelogo.png)
-# Perimeter81 Wireguard Config Generator for Windows 
+![](Screenshots/perimeter-81-squarelogo.png) # Perimeter81 Wireguard Config Generator for Windows 
 
 In the event that a customer chooses to use a windows machine as their wireguard connector, it is possible to install a wireguard peer client.
 
