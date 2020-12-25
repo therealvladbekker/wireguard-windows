@@ -16,7 +16,7 @@ In the event that a customer chooses to use a windows machine as their wireguard
  ### 3. Run Wireguard config generator. 
 **_NOTE:_** Make sure that the generator script and the configuration file are in the same folder
  
- * Configuration file named Perimeter81.conf should be generated for you in the same folder
+ * Configuration file named *Perimeter81.conf* should be generated for you in the same folder
   
  ### 4. Import the newly created configuration file into the wireguard connector 
  ![Screenshot](Screenshots/wireguard_windows.jpg)
