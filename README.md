@@ -2,7 +2,7 @@
 
 In the event that a customer chooses to use a windows machine as their wireguard connector, it is possible to install a wireguard peer client.
 
-**_NOTE:_** This script needs registry access in order to enable IP Forwarding (IPEnableRouter registry key)
+**_NOTE:_** This script requires windows registry access in order to enable IP Forwarding (IPEnableRouter registry key)
 
 You can download it from the link below or also get it from this repo:
 
