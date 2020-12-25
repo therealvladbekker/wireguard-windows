@@ -1,6 +1,6 @@
 # Perimeter81 Wireguard Config Generator for Windows 
 
-In the event that a customer chooses to use a windows machine as their wireguard connector, it is possible to install a wireguard peer client.
+In the event that a customer chooses to use a Windows machine as their wireguard connector, the wireguard config generator will help build the required configuration file for easy import and will also make sure that IP forwarding is enabled in Windows. Currently only tested with Windows 10 1909
 
 **_NOTE:_** This script requires windows registry access in order to enable IP Forwarding (IPEnableRouter registry key). Reboot is required
 
