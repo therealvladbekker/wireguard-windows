@@ -6,9 +6,9 @@ You can download it from the link below or also get it from this repo:
 
 https://www.wireguard.com/install/
 
-1. Download and install Wireguard for windows
-2. Download the wireguard_generator.exe script
-3. Get your configuration file from your workspace:
+h2. 1. Download and install Wireguard for windows
+h2. 2. Download the wireguard_generator.exe script
+h2. 3. Get your configuration file from your workspace:
   - Click on your wireguard tunnel, go to Configuration
   - Copy only the https link portion to your clipboard (everythign after "curl -s" and before "| sudo bash")
   - Paste it into a web browser. You should now have a file in your Downloads folder
