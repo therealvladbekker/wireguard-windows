@@ -11,29 +11,29 @@ def enable_IP_forwarding():
 
 def config_generator():
     config_hash={}
-
+    config=None
     file_list=(listdir(pathlib.Path(__file__).parent.absolute()))
 
     for file in file_list:
         if os.path.isfile(file):
-            if 'support@perimeter81.com' in open(file).read():
-                if not file.endswith('.py'):
-                    config=file
+            if 'support@perimeter81.com' in open(file).read() and not file.endswith('.py'):
+                config=file
+
+    if config == None:
+        print("You Perimeter81 configuration file was not found. Please download it from your workspace")
+        input("Press Enter to continue...")
 
     f = open(config, 'r')
     lines = f.readlines()
-    #f.close()
 
     for line in lines:
         if line.startswith('CONFIG'):
             key = line.split('=', 1)[0]
             value = line.split('=', 1)[1].split(' ')[0].rstrip().replace('"','')
-            #print(value)
             config_hash[key] = value
 
     f.close()
 
-    #print(config_hash)
     if os.path.exists("Perimeter81.conf"):
         os.remove("Perimeter81.conf")
 
@@ -49,7 +49,6 @@ def config_generator():
     conf.write("Endpoint = " + config_hash['CONFIG_endpoint'] + '\n')
     conf.write("PersistentKeepalive = " + '10')
     conf.close()
-
 
 def is_admin():
     try:
