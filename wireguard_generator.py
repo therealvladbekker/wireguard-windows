@@ -4,7 +4,6 @@ from os import listdir
 import pathlib
 import winreg as wreg
 
-
 def enable_IP_forwarding():
     key = wreg.OpenKey(wreg.HKEY_LOCAL_MACHINE, r'SYSTEM\CurrentControlSet\Services\Tcpip\Parameters', 0, wreg.KEY_SET_VALUE)
     wreg.SetValueEx(key, "IPEnableRouter", 1, wreg.REG_DWORD, 1)
@@ -12,11 +11,14 @@ def enable_IP_forwarding():
 def config_generator():
     config_hash={}
     config=None
+    #Get the directory contents
     file_list=(listdir(pathlib.Path(__file__).parent.absolute()))
 
     for file in file_list:
+        #Only look inside file and ignore directories
         if os.path.isfile(file):
-            if 'support@perimeter81.com' in open(file).read() and not file.endswith('.py'):
+            if 'support@perimeter81.com' in open(file, encoding='utf8', errors='ignore').read() and not file.endswith('.py'):
+                #If above matches, we are pretty certain we've located the config file
                 config=file
 
     if config == None:
@@ -48,7 +50,10 @@ def config_generator():
     conf.write("AllowedIPs = " + config_hash['CONFIG_allowedIP'] + '\n')
     conf.write("Endpoint = " + config_hash['CONFIG_endpoint'] + '\n')
     conf.write("PersistentKeepalive = " + '10')
+
     conf.close()
+
+config_generator()
 
 def is_admin():
     try:
@@ -57,7 +62,6 @@ def is_admin():
         return False
 if is_admin():
     enable_IP_forwarding()
-    config_generator()
 else:
     if sys.version_info[0] == 3:
         ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, __file__, None, 1)
