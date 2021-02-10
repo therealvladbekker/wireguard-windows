@@ -24,4 +24,7 @@ In the event that a customer chooses to use a Windows machine as their wireguard
  ### 5. Activate
  ![Screenshot](Screenshots/wireguard_activated.jpg)
 
- ### 6. Restart the computer
+### 6. Share the Wireguard Tunnel interface connection with the primary LAN connection
+ ![Screenshot](Screenshots/conn_shared.jpg)
+
+### 7. Restart the computer
