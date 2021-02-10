@@ -25,6 +25,7 @@ In the event that a customer chooses to use a Windows machine as their wireguard
  ![Screenshot](Screenshots/wireguard_activated.jpg)
 
 ### 6. Share the Wireguard Tunnel interface connection with the primary LAN connection
+**_NOTE:_** Make sure that the this does not change your IP address of the primary network interface. (I've seen this add 192.168.137.1 to it)
  ![Screenshot](Screenshots/conn_sharing.jpg)
 
 ### 7. Restart the computer
