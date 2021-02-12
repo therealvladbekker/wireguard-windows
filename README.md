@@ -21,7 +21,8 @@ In the event that a customer chooses to use a Windows machine as their wireguard
  ### 4. Import the newly created configuration file into the wireguard connector 
  ![Screenshot](Screenshots/wireguard_windows.jpg)
  
- ### 5. Activate
+ ### 5. Restart the computer
+ 
+ ### 6. Activate
  ![Screenshot](Screenshots/wireguard_activated.jpg)
 
-### 6. Restart the computer
