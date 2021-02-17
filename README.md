@@ -28,5 +28,5 @@ In the event that a customer chooses to use a Windows machine as their wireguard
  ### 6. Restart the computer
  
  ### 7. Activate (Should be automatic upon restart)
- ![Screenshot](Screenshots/wireguard_activated.jpg)
+ ![Screenshot](Screenshots/conn_sharing.jpg)
 
