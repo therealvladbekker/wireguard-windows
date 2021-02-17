@@ -21,8 +21,12 @@ In the event that a customer chooses to use a Windows machine as their wireguard
  ### 4. Import the newly created configuration file into the wireguard connector 
  ![Screenshot](Screenshots/wireguard_windows.jpg)
  
- ### 5. Restart the computer
+ ### 5. Enable Internet COnnection Sharing on the Wireguard Adapter
  
- ### 6. Activate
+  ![Screenshot](Screenshots/wireguard_activated.jpg)
+
+ ### 6. Restart the computer
+ 
+ ### 7. Activate (Should be automatic upon restart)
  ![Screenshot](Screenshots/wireguard_activated.jpg)
 
