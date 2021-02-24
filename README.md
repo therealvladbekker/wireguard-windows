@@ -15,7 +15,9 @@ In the event that a customer chooses to use a Windows machine as their wireguard
   
  ### 3. Run Wireguard config generator. 
 **_NOTE:_** Make sure that the generator script and the configuration file are in the same folder
- 
+ * This will generate a file called Perimeter81.conf containing a config of the peer that P81 gateway will allow connections from
+ * This also applies a few configuration changes to the registry which are required to enable IP routing and make sure that the ICS will persist a reboot
+ * A reboot will be required later due to these changes
  * Configuration file named **Perimeter81.conf** should be generated for you in the same folder
   
  ### 4. Import the newly created configuration file into the wireguard connector 
@@ -23,7 +25,7 @@ In the event that a customer chooses to use a Windows machine as their wireguard
  
  ![Screenshot](Screenshots/wireguard_activated.jpg)
  
- ### 5. Enable Internet COnnection Sharing on the Wireguard Adapter
+ ### 5. Enable Internet Connection Sharing (ICS) on the Main NIC Adapter (the one with the default route)
  ![Screenshot](Screenshots/conn_sharing.jpg)
 
  ### 6. Restart the computer
