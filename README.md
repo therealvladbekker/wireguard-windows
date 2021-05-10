@@ -27,9 +27,7 @@ In the event that a customer chooses to use a Windows machine as their wireguard
  
  ### 5. Enable Internet Connection Sharing (ICS) on the Main NIC Adapter (the one with the default route)
  ![Screenshot](Screenshots/conn_sharing.jpg)
-
- ### 6. Restart the computer
  
- ### 7. Activate (Should be automatic upon restart)
+ ### 6. Activate (Should be automatic upon restart)
 
 
