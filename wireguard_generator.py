@@ -1,4 +1,5 @@
 import ctypes, sys
+import time
 import os
 from os import listdir
 import pathlib
@@ -8,13 +9,29 @@ def enable_IP_forwarding():
     key = wreg.OpenKey(wreg.HKEY_LOCAL_MACHINE, r'SYSTEM\CurrentControlSet\Services\Tcpip\Parameters', 0, wreg.KEY_SET_VALUE)
     wreg.SetValueEx(key, "IPEnableRouter", 1, wreg.REG_DWORD, 1)
 
+def enable_IP_forwarding2():
+    key = wreg.OpenKey(wreg.HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows\CurrentVersion\SharedAccess', 0, wreg.KEY_SET_VALUE)
+    wreg.SetValueEx(key, "EnableRebootPersistConnection", 1, wreg.REG_DWORD, 1)
+
 def config_generator():
+
     config_hash={}
     config=None
     #Get the directory contents
-    file_list=(listdir(pathlib.Path(__file__).parent.absolute()))
 
-    for file in file_list:
+    #print(listdir(pathlib.Path(__file__).parent.absolute()))
+    #print(pathlib.Path(__file__).parent.absolute())
+    #Python changed something....Have to adapt
+    #print(os.path.dirname(os.path.realpath(sys.argv[0])))
+
+    #time.sleep(10)
+    #exit()
+
+    directory=(os.path.dirname(os.path.realpath(sys.argv[0])))
+    #print(directory)
+
+    for file in os.listdir(directory):
+        #print(file)
         #Only look inside file and ignore directories
         if os.path.isfile(file):
             if 'support@perimeter81.com' in open(file, encoding='utf8', errors='ignore').read() and not file.endswith('.py'):
@@ -62,6 +79,8 @@ def is_admin():
         return False
 if is_admin():
     enable_IP_forwarding()
+    enable_IP_forwarding2()
+
 else:
     if sys.version_info[0] == 3:
         ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, __file__, None, 1)
