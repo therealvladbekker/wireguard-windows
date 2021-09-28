@@ -1,4 +1,4 @@
-﻿#Set-ExecutionPolicy Bypass
+Set-ExecutionPolicy Bypass
 
 #. "$PSScriptRoot\ICS.ps1"
 #. .\ICS.ps1
