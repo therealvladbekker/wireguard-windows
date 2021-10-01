@@ -1,5 +1,10 @@
 # Perimeter81 Wireguard Config Generator for Windows 
 
+UPDATE!
+There is BETTER way to do this via a powershell script:
+Download it here - https://drive.google.com/file/d/1ZnNJTA0L4moZvgbsCjayjyZYUf8LRPRA/view?usp=sharing
+
+
 In the event that a customer chooses to use a Windows machine as their wireguard connector, the wireguard config generator will help build the required configuration file for easy import and will also make sure that IP forwarding is enabled in Windows. Currently only tested with Windows 10 1909
 
 **_NOTE:_** This script requires windows registry access in order to enable IP Forwarding (IPEnableRouter registry key). Reboot is required
