@@ -1,4 +1,4 @@
-Set-ExecutionPolicy Bypass
+﻿Set-ExecutionPolicy Bypass
 
 #. "$PSScriptRoot\ICS.ps1"
 #. .\ICS.ps1
@@ -126,7 +126,7 @@ $wireguardServiceName = Get-Service -Displayname "*wireguard tunnel*"
 
 if ($wireguardServiceName.Status -ne "Running"){
 #MOVE DOWN AFTER the config file is ready
-Start-Process -Wait -FilePath "C:\Program Files\WireGuard\wireguard.exe" -ArgumentList "/installtunnelservice C:\Users\user\Downloads\wg\Perimeter81.conf" -Verb RunAs
+Start-Process -Wait -FilePath "C:\Program Files\WireGuard\wireguard.exe" -ArgumentList "/installtunnelservice $scriptPath\Perimeter81.conf" -Verb RunAs
 
 }
 
